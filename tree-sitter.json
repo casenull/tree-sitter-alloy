@@ -1,0 +1,38 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "alloy",
+      "camelcase": "Alloy",
+      "title": "Grafana Alloy",
+      "scope": "source.alloy",
+      "file-types": [
+        "alloy"
+      ],
+      "injection-regex": "^alloy$",
+      "class-name": "TreeSitterAlloy"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Grafana Alloy's configuration language.",
+    "authors": [
+      {
+        "name": "Łukasz Klimek"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/Artemigos/tree-sitter-alloy"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
